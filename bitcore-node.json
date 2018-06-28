@@ -1,0 +1,22 @@
+{
+  "network": "livenet",
+  "port": 3001,
+  "services": [
+    "bitcoind",
+    "nix-insight-api",
+    "nix-insight-ui",
+    "web"
+  ],
+  "servicesConfig": {
+    "insight-ui": {
+      "cwdRequirePath": "node_modules/insight-ui"
+    },
+    "bitcoind": {
+      "spawn": {
+        "datadir": "/home/pieter/.bitcore/data",
+        "exec": "/usr/local/bin/nixd"
+      }
+    }
+  }
+}
+
