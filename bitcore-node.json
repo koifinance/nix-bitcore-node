@@ -13,7 +13,7 @@
     },
     "bitcoind": {
       "spawn": {
-        "datadir": "/home/pieter/.bitcore/data",
+        "datadir": "/home/user/.bitcore/data",
         "exec": "/usr/local/bin/nixd"
       }
     }
